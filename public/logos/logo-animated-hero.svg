@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="signalGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90a4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a6b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="pulseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="subtleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <style>
+    @keyframes nodeActivate1 {
+      0%, 20%, 100% { opacity: 0.5; }
+      10% { opacity: 1; }
+    }
+    
+    @keyframes nodeActivate2 {
+      0%, 30%, 100% { opacity: 0.5; }
+      40% { opacity: 1; }
+    }
+    
+    @keyframes nodeActivate3 {
+      0%, 50%, 100% { opacity: 0.5; }
+      60% { opacity: 1; }
+    }
+    
+    @keyframes ringPulse {
+      0%, 100% { stroke-opacity: 0.7; }
+      50% { stroke-opacity: 1; }
+    }
+    
+    @keyframes centralPulse {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+    
+    @keyframes signalFlow {
+      0% { stroke-dashoffset: 200; opacity: 0.3; }
+      50% { opacity: 0.8; }
+      100% { stroke-dashoffset: 0; opacity: 0.3; }
+    }
+    
+    @keyframes drawPath {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    .signal-node-1 { animation: nodeActivate1 4s ease-in-out infinite; }
+    .signal-node-2 { animation: nodeActivate2 4s ease-in-out infinite; }
+    .signal-node-3 { animation: nodeActivate3 4s ease-in-out infinite; }
+    .outer-ring { animation: ringPulse 6s ease-in-out infinite, fadeIn 0.5s ease-out forwards; }
+    .central-node { animation: centralPulse 3s ease-in-out infinite; }
+    .neural-path { stroke-dasharray: 200; animation: drawPath 2s ease-out forwards; animation-delay: 0.5s; stroke-dashoffset: 200; }
+    .signal-path { stroke-dasharray: 200; animation: signalFlow 4s ease-in-out infinite; animation-delay: 2.5s; }
+    .node-group { animation: fadeIn 0.5s ease-out forwards; opacity: 0; }
+    .node-group.n1 { animation-delay: 2s; }
+    .node-group.n2 { animation-delay: 2.3s; }
+    .node-group.n3 { animation-delay: 2.6s; }
+  </style>
+  
+  <!-- Outer ring -->
+  <circle class="outer-ring" cx="100" cy="100" r="80" fill="none" stroke="#fafafa" stroke-width="2"/>
+  
+  <!-- Neural pathway (M shape) -->
+  <path class="neural-path"
+        d="M 50 130 
+           Q 50 60, 75 60 
+           Q 100 60, 100 100 
+           Q 100 60, 125 60 
+           Q 150 60, 150 130" 
+        fill="none" 
+        stroke="#fafafa" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+  
+  <!-- Signal flow overlay -->
+  <path class="signal-path"
+        d="M 50 130 
+           Q 50 60, 75 60 
+           Q 100 60, 100 100 
+           Q 100 60, 125 60 
+           Q 150 60, 150 130" 
+        fill="none" 
+        stroke="#4a90a4" 
+        stroke-width="2" 
+        stroke-linecap="round"
+        filter="url(#subtleGlow)"/>
+  
+  <!-- Signal nodes -->
+  <g class="node-group n1">
+    <circle class="signal-node-1" cx="50" cy="130" r="5" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  </g>
+  <g class="node-group n2">
+    <circle class="signal-node-2" cx="100" cy="100" r="6" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  </g>
+  <g class="node-group n3">
+    <circle class="signal-node-3" cx="150" cy="130" r="5" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  </g>
+  
+  <!-- Central intelligence node -->
+  <circle class="central-node" cx="100" cy="72" r="4" fill="#fafafa" filter="url(#subtleGlow)"/>
+  
+</svg>

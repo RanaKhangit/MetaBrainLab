@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="signalGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90a4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a6b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="pulseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="subtleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <style>
+    @keyframes nodeActivate1 {
+      0%, 20%, 100% { opacity: 0.5; r: 6; }
+      10% { opacity: 1; r: 9; }
+    }
+    
+    @keyframes nodeActivate2 {
+      0%, 30%, 100% { opacity: 0.5; r: 8; }
+      40% { opacity: 1; r: 11; }
+    }
+    
+    @keyframes nodeActivate3 {
+      0%, 50%, 100% { opacity: 0.5; r: 6; }
+      60% { opacity: 1; r: 9; }
+    }
+    
+    @keyframes ringPulse {
+      0%, 100% { stroke-opacity: 0.7; }
+      50% { stroke-opacity: 1; }
+    }
+    
+    @keyframes centralPulse {
+      0%, 100% { opacity: 0.8; r: 5; }
+      50% { opacity: 1; r: 6; }
+    }
+    
+    @keyframes signalFlow {
+      0% { stroke-dashoffset: 300; opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.3; }
+    }
+    
+    .signal-node-1 { animation: nodeActivate1 4s ease-in-out infinite; }
+    .signal-node-2 { animation: nodeActivate2 4s ease-in-out infinite; }
+    .signal-node-3 { animation: nodeActivate3 4s ease-in-out infinite; }
+    .outer-ring { animation: ringPulse 6s ease-in-out infinite; }
+    .central-node { animation: centralPulse 3s ease-in-out infinite; }
+    .signal-path { stroke-dasharray: 300; animation: signalFlow 4s ease-in-out infinite; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0d0d14"/>
+  
+  <!-- Ambient glow -->
+  <circle cx="200" cy="200" r="120" fill="url(#signalGlow)" opacity="0.05"/>
+  
+  <!-- Outer ring -->
+  <circle class="outer-ring" cx="200" cy="200" r="100" fill="none" stroke="#fafafa" stroke-width="2"/>
+  
+  <!-- Neural pathway -->
+  <path d="M 130 250 
+           Q 130 150, 165 150 
+           Q 200 150, 200 200 
+           Q 200 150, 235 150 
+           Q 270 150, 270 250" 
+        fill="none" 
+        stroke="#fafafa" 
+        stroke-width="3.5" 
+        stroke-linecap="round"
+        opacity="0.9"/>
+  
+  <!-- Signal flow overlay -->
+  <path class="signal-path"
+        d="M 130 250 
+           Q 130 150, 165 150 
+           Q 200 150, 200 200 
+           Q 200 150, 235 150 
+           Q 270 150, 270 250" 
+        fill="none" 
+        stroke="#4a90a4" 
+        stroke-width="2" 
+        stroke-linecap="round"
+        filter="url(#subtleGlow)"/>
+  
+  <!-- Signal nodes -->
+  <circle class="signal-node-1" cx="130" cy="250" r="6" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  <circle class="signal-node-2" cx="200" cy="200" r="8" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  <circle class="signal-node-3" cx="270" cy="250" r="6" fill="#4a90a4" filter="url(#pulseGlow)"/>
+  
+  <!-- Central intelligence node -->
+  <circle class="central-node" cx="200" cy="165" r="5" fill="#fafafa" filter="url(#subtleGlow)"/>
+  
+  <!-- Connecting signal line -->
+  <line x1="200" y1="165" x2="200" y2="200" stroke="#4a90a4" stroke-width="1" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+</svg>

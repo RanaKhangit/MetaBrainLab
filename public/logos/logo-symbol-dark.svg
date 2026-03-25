@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+  <!-- MetaBrain Labs - Primary Symbol Mark (Light on Dark) -->
+  <rect width="140" height="140" fill="#0d0d1a"/>
+  <circle cx="70" cy="70" r="58" fill="none" stroke="#fafafa" stroke-width="2.5" opacity="0.9"/>
+  <path d="M 35 95 
+           Q 35 45, 55 45 
+           Q 70 45, 70 70 
+           Q 70 45, 85 45 
+           Q 105 45, 105 95" 
+        fill="none" 
+        stroke="#fafafa" 
+        stroke-width="3.5" 
+        stroke-linecap="round"/>
+  <circle cx="35" cy="95" r="4" fill="#4a90a4"/>
+  <circle cx="70" cy="70" r="5" fill="#4a90a4"/>
+  <circle cx="105" cy="95" r="4" fill="#4a90a4"/>
+  <circle cx="70" cy="55" r="3" fill="#fafafa"/>
+</svg>

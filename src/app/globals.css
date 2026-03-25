@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds */
+  --color-sovereign-navy: #0A0F1C;
+  --color-deep-cognition: #1A2540;
+  --color-neural-slate: #1E2A3E;
+  --color-surface: #252F45;
+
+  /* Accents */
+  --color-cognitive-teal: #2DD4BF;
+  --color-signal-cyan: #06B6D4;
+  --color-accent-hover: #5EEAD4;
+
+  /* Text */
+  --color-pure-light: #F8FAFC;
+  --color-soft-grey: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* Font families */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "IBM Plex Mono", "Courier New", monospace;
+
+  /* Font sizes */
+  --text-hero: 5rem;
+  --text-section: 3.25rem;
+  --text-card-title: 2rem;
+  --text-body-lg: 1.125rem;
+
+  /* Custom spacing */
+  --spacing-section: 8rem;
+  --spacing-section-inner: 4rem;
+
+  /* Animations */
+  --animate-fade-up: fade-up 0.6s ease forwards;
+  --animate-pulse-slow: pulse-slow 6s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-sovereign-navy);
+  color: var(--color-pure-light);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-sovereign-navy), 0 0 0 4px var(--color-cognitive-teal);
+  border-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0F1C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2A3E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252F45;
+}
+
+/* Utility classes */
+@utility heading-hero {
+  font-family: var(--font-serif);
+  font-size: 5rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  color: var(--color-pure-light);
+}
+
+@utility heading-section {
+  font-family: var(--font-serif);
+  font-size: 3.25rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+  color: var(--color-pure-light);
+}
+
+@utility heading-card {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -0.009em;
+  font-weight: 400;
+  color: var(--color-pure-light);
+}
+
+@utility body-large {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.56;
+  font-weight: 400;
+  color: var(--color-soft-grey);
+}
+
+@utility body-default {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+  color: var(--color-soft-grey);
+}
+
+@utility body-secondary {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.57;
+  font-weight: 400;
+  color: var(--color-soft-grey);
+  opacity: 0.6;
+}
+
+@utility text-metadata {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Mobile typography */
+@media (max-width: 640px) {
+  .heading-hero {
+    font-size: 2.75rem;
+  }
+  .heading-section {
+    font-size: 2.25rem;
+  }
+  .heading-card {
+    font-size: 1.625rem;
+  }
+}
+
+/* Print: hide structural grid */
+@media print {
+  .structural-grid {
+    display: none;
+  }
+}
+
+/* Gradient backgrounds */
+@utility gradient-hero {
+  background: linear-gradient(180deg, #0A0F1C 0%, #141B2D 50%, #0A0F1C 100%);
+}
+
+@utility gradient-glow {
+  background: radial-gradient(ellipse at center, rgba(45, 212, 191, 0.15) 0%, transparent 70%);
+}
+
+@utility gradient-card {
+  background: linear-gradient(135deg, #1E2A3E 0%, #141B2D 100%);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(45, 212, 191, 0.3);
+  color: var(--color-pure-light);
+}

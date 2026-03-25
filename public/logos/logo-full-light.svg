@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <!-- MetaBrain Labs - Full Logo with Wordmark -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap');
+    </style>
+  </defs>
+  
+  <!-- Symbol -->
+  <circle cx="70" cy="70" r="58" fill="none" stroke="#1a1a2e" stroke-width="2.5" opacity="0.9"/>
+  <path d="M 35 95 
+           Q 35 45, 55 45 
+           Q 70 45, 70 70 
+           Q 70 45, 85 45 
+           Q 105 45, 105 95" 
+        fill="none" 
+        stroke="#1a1a2e" 
+        stroke-width="3.5" 
+        stroke-linecap="round"/>
+  <circle cx="35" cy="95" r="4" fill="#4a90a4"/>
+  <circle cx="70" cy="70" r="5" fill="#4a90a4"/>
+  <circle cx="105" cy="95" r="4" fill="#4a90a4"/>
+  <circle cx="70" cy="55" r="3" fill="#1a1a2e"/>
+  
+  <!-- Wordmark -->
+  <text x="150" y="62" font-family="'Playfair Display', Georgia, serif" font-size="32" font-weight="700" fill="#1a1a2e" letter-spacing="1">METABRAIN</text>
+  <text x="150" y="95" font-family="'Work Sans', 'Helvetica Neue', sans-serif" font-size="16" fill="#4a90a4" letter-spacing="5" font-weight="400">LABS</text>
+</svg>
