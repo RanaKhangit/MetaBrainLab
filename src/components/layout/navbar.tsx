@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,7 +43,7 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "h-[64px] bg-sovereign-navy/80 backdrop-blur-md border-b border-white/5"
+            ? "h-[64px] bg-sovereign-navy/80 backdrop-blur-md"
             : "h-[80px] bg-transparent"
         )}
       >
@@ -80,20 +81,27 @@ export function Navbar() {
           {/* Center Logo */}
           <Link
             href="/"
-            className="mx-4 flex shrink-0 items-center gap-2 lg:mx-8"
-            aria-label="MetaBrain Labs Home"
+            className="mx-4 flex shrink-0 items-center lg:mx-8"
+            aria-label="MetaBrain Lab Home"
           >
-            <motion.span
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className={cn(
-                "font-serif text-pure-light tracking-tight whitespace-nowrap transition-all duration-500 origin-center",
-                scrolled ? "text-lg lg:text-xl" : "text-xl lg:text-2xl"
-              )}
+              className="transition-all duration-500 origin-center"
             >
-              MetaBrain Labs
-            </motion.span>
+              <Image
+                src="/logos/logo-white.svg"
+                alt="MetaBrain Lab"
+                width={180}
+                height={40}
+                className={cn(
+                  "transition-all duration-500",
+                  scrolled ? "h-10 w-auto" : "h-14 w-auto"
+                )}
+                priority
+              />
+            </motion.div>
           </Link>
 
           {/* Desktop: Right nav links */}
@@ -226,7 +234,7 @@ export function Navbar() {
               {/* Sidebar Footer */}
               <div className="absolute bottom-0 left-0 right-0 border-t border-white/5 px-6 py-6">
                 <p className="text-xs text-text-muted">
-                  MetaBrain Labs
+                  MetaBrain Lab
                 </p>
                 <p className="mt-1 text-xs text-text-muted">
                   Engineering the Future of Human Intelligence

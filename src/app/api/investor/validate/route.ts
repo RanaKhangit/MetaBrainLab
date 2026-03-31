@@ -7,10 +7,10 @@ const DEMO_CODES: Record<
   string,
   { tier: "A" | "B" | "C"; name: string; email: string }
 > = {
-  "MBL-A-DEMO": { tier: "A", name: "Demo Investor (Tier A)", email: "demo-a@metabrainlabs.com" },
-  "MBL-B-DEMO": { tier: "B", name: "Demo Investor (Tier B)", email: "demo-b@metabrainlabs.com" },
-  "MBL-C-DEMO": { tier: "C", name: "Demo Investor (Tier C)", email: "demo-c@metabrainlabs.com" },
-  "304378":     { tier: "B", name: "Investor", email: "investor@metabrainlabs.com" },
+  "MBL-A-DEMO": { tier: "A", name: "Demo Investor (Tier A)", email: "demo-a@metabrainlab.com" },
+  "MBL-B-DEMO": { tier: "B", name: "Demo Investor (Tier B)", email: "demo-b@metabrainlab.com" },
+  "MBL-C-DEMO": { tier: "C", name: "Demo Investor (Tier C)", email: "demo-c@metabrainlab.com" },
+  "304378":     { tier: "B", name: "Investor", email: "investor@metabrainlab.com" },
 };
 
 export async function POST(request: Request) {

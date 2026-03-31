@@ -204,7 +204,7 @@ function ConsentCheckbox({
         className="mt-1 h-4 w-4 shrink-0 rounded border-white/10 bg-surface accent-cognitive-teal"
       />
       <span className="text-sm text-soft-grey">
-        I consent to MetaBrain Labs processing my data to respond to this enquiry in accordance
+        I consent to MetaBrain Lab processing my data to respond to this enquiry in accordance
         with the{" "}
         <Link href="/privacy" className="text-cognitive-teal hover:text-accent-hover underline">
           Privacy Policy
@@ -454,22 +454,22 @@ const contactMethods = [
   {
     icon: Mail,
     label: "General Enquiries",
-    email: "contact@metabrainlabs.com",
+    email: "contact@metabrainlab.com",
   },
   {
     icon: Briefcase,
     label: "Investment Enquiries",
-    email: "investors@metabrainlabs.com",
+    email: "investors@metabrainlab.com",
   },
   {
     icon: Users,
     label: "Careers",
-    email: "careers@metabrainlabs.com",
+    email: "careers@metabrainlab.com",
   },
   {
     icon: Newspaper,
     label: "Media",
-    email: "media@metabrainlabs.com",
+    email: "media@metabrainlab.com",
   },
 ];
 

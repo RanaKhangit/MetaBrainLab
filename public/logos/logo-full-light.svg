@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
-  <!-- MetaBrain Labs - Full Logo with Wordmark -->
+  <!-- MetaBrain Lab - Full Logo with Wordmark -->
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap');
@@ -24,5 +24,5 @@
   
   <!-- Wordmark -->
   <text x="150" y="62" font-family="'Playfair Display', Georgia, serif" font-size="32" font-weight="700" fill="#1a1a2e" letter-spacing="1">METABRAIN</text>
-  <text x="150" y="95" font-family="'Work Sans', 'Helvetica Neue', sans-serif" font-size="16" fill="#4a90a4" letter-spacing="5" font-weight="400">LABS</text>
+  <text x="150" y="95" font-family="'Work Sans', 'Helvetica Neue', sans-serif" font-size="16" fill="#4a90a4" letter-spacing="5" font-weight="400">LAB</text>
 </svg>

@@ -18,9 +18,9 @@ import { ScrollReveal } from "@/components/features/scroll-reveal";
 import { PageCTA } from "@/components/shared/page-cta";
 
 export const metadata: Metadata = {
-  title: "Ethics & Governance \u2014 MetaBrain Labs Principles",
+  title: "Ethics & Governance \u2014 MetaBrain Lab Principles",
   description:
-    "At MetaBrain Labs, ethics is not compliance. It is architecture. Learn about our governance framework and neurorights commitments.",
+    "At MetaBrain Lab, ethics is not compliance. It is architecture. Learn about our governance framework and neurorights commitments.",
 };
 
 const corePrinciples = [
@@ -123,7 +123,7 @@ export default function EthicsPage() {
 
           <div className="mx-auto max-w-3xl space-y-6 mb-16">
             <p className="body-large">
-              At MetaBrain Labs, ethics is not a department or a compliance
+              At MetaBrain Lab, ethics is not a department or a compliance
               function. It is an architectural principle &mdash; built into the
               technical design of everything we create.
             </p>
@@ -184,7 +184,7 @@ export default function EthicsPage() {
           <SectionHeading title="Governance Framework" />
 
           <p className="body-large mx-auto mb-12 max-w-3xl">
-            MetaBrain Labs is establishing institutional-grade governance with
+            MetaBrain Lab is establishing institutional-grade governance with
             four independent oversight bodies. These boards are being assembled
             as part of the Phase I programme; appointments will be announced as
             they are confirmed.
@@ -228,7 +228,7 @@ export default function EthicsPage() {
             </div>
 
             <p className="body-large pt-4">
-              MetaBrain Labs is committed to building technology that protects
+              MetaBrain Lab is committed to building technology that protects
               these rights, not technology that threatens them.
             </p>
           </div>

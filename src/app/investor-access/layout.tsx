@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Investor Access",
   description:
-    "Secure portal for MetaBrain Labs investors and prospective investment partners.",
+    "Secure portal for MetaBrain Lab investors and prospective investment partners.",
   robots: { index: false, follow: false },
 };
 

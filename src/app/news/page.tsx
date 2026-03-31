@@ -12,17 +12,17 @@ const newsItems = [
     date: "February 2026",
     title: "Investor Documentation Published",
     summary:
-      "MetaBrain Labs has published its v1.0 investor document suite, including Executive Summary, Investor Pitch Deck, Technology Overview, and Financial Summary. Documents are available through the investor portal to qualified investors.",
+      "MetaBrain Lab has published its v1.0 investor document suite, including Executive Summary, Investor Pitch Deck, Technology Overview, and Financial Summary. Documents are available through the investor portal to qualified investors.",
   },
   {
     date: "February 2026",
     title: "Governance Framework Announced",
     summary:
-      "MetaBrain Labs has announced its four-body governance framework: Scientific Advisory Board, Ethics & Neurorights Council, Clinical Oversight Committee, and Security & Identity Board. Board appointments are in progress and will be announced as they are confirmed.",
+      "MetaBrain Lab has announced its four-body governance framework: Scientific Advisory Board, Ethics & Neurorights Council, Clinical Oversight Committee, and Security & Identity Board. Board appointments are in progress and will be announced as they are confirmed.",
   },
   {
     date: "February 2026",
-    title: "MetaBrain Labs Launches New Website",
+    title: "MetaBrain Lab Launches New Website",
     summary:
       "We are pleased to announce the launch of our new website, providing comprehensive information about our mission, technology, and approach to cognitive enhancement.",
   },
@@ -30,7 +30,7 @@ const newsItems = [
     date: "February 2026",
     title: "Chief Scientific Officer Search Initiated",
     summary:
-      "MetaBrain Labs has begun the search for a Founding Chief Scientific Officer to lead the Phase I research programme. The role requires senior neuroscience leadership experience and published research credentials.",
+      "MetaBrain Lab has begun the search for a Founding Chief Scientific Officer to lead the Phase I research programme. The role requires senior neuroscience leadership experience and published research credentials.",
   },
 ];
 
@@ -67,7 +67,7 @@ function NewsletterForm() {
       <SectionHeading title="Stay Updated" align="center" />
 
       <p className="body-default mb-8">
-        Stay informed about MetaBrain Labs developments. Subscribe to our
+        Stay informed about MetaBrain Lab developments. Subscribe to our
         newsletter for occasional updates on our progress.
       </p>
 
@@ -118,7 +118,7 @@ export default function NewsPage() {
     <>
       <PageHeader
         title="News & Updates"
-        subtitle="Latest developments from MetaBrain Labs."
+        subtitle="Latest developments from MetaBrain Lab."
       />
 
       {/* ── Section 1: News Items ── */}

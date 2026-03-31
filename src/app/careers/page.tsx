@@ -14,9 +14,9 @@ import { ScrollReveal } from "@/components/features/scroll-reveal";
 import { PageCTA } from "@/components/shared/page-cta";
 
 export const metadata: Metadata = {
-  title: "Research Positions — MetaBrain Labs",
+  title: "Research Positions — MetaBrain Lab",
   description:
-    "Join MetaBrain Labs. We are building a founding research team to develop cognitive enhancement infrastructure.",
+    "Join MetaBrain Lab. We are building a founding research team to develop cognitive enhancement infrastructure.",
 };
 
 const valuePropositions = [
@@ -79,7 +79,7 @@ const positionCategories = [
 
 const applicationItems = [
   "Your CV",
-  "A brief note explaining why MetaBrain Labs interests you",
+  "A brief note explaining why MetaBrain Lab interests you",
   "Any relevant publications, projects, or portfolio materials",
 ];
 
@@ -92,14 +92,14 @@ export default function CareersPage() {
         authorityTag="RESEARCH POSITIONS — JOIN THE MISSION"
       />
 
-      {/* -- Section 1: Why MetaBrain Labs -- */}
+      {/* -- Section 1: Why MetaBrain Lab -- */}
       <Section background="primary">
         <ScrollReveal>
-          <SectionHeading title="Why MetaBrain Labs" />
+          <SectionHeading title="Why MetaBrain Lab" />
 
           <div className="mx-auto max-w-3xl space-y-6 mb-16">
             <p className="body-large">
-              MetaBrain Labs is building foundational infrastructure for
+              MetaBrain Lab is building foundational infrastructure for
               cognitive enhancement &mdash; integrated systems designed to
               measurably improve human memory, learning, focus, and
               decision-making.
@@ -195,10 +195,10 @@ export default function CareersPage() {
             <p className="body-large pt-4">
               Email:{" "}
               <a
-                href="mailto:careers@metabrainlabs.com"
+                href="mailto:careers@metabrainlab.com"
                 className="text-cognitive-teal hover:text-accent-hover transition"
               >
-                careers@metabrainlabs.com
+                careers@metabrainlab.com
               </a>
             </p>
 
@@ -213,8 +213,8 @@ export default function CareersPage() {
       <PageCTA
         heading="Apply Now"
         description="Send your CV, a brief note explaining your interest, and any relevant publications or portfolio materials."
-        primaryLabel="Email careers@metabrainlabs.com"
-        primaryHref="mailto:careers@metabrainlabs.com"
+        primaryLabel="Email careers@metabrainlab.com"
+        primaryHref="mailto:careers@metabrainlab.com"
         secondaryLabel="General Enquiry"
         secondaryHref="/contact"
       />

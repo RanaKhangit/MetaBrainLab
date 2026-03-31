@@ -1,4 +1,4 @@
-# MetaBrain Labs — Asset Files
+# MetaBrain Lab — Asset Files
 
 ## Logo Files
 

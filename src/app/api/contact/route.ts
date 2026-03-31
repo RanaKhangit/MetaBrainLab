@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { checkRateLimit, getClientIP } from "@/lib/rate-limit";
+import {
+  sendEmail,
+  formatInvestorEmail,
+  formatScientificEmail,
+  formatPartnershipEmail,
+} from "@/lib/email";
 
 const baseFields = {
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -52,10 +58,21 @@ const formSchemas = {
   partnership: partnershipSchema,
 };
 
+const emailFormatters = {
+  investor: formatInvestorEmail,
+  scientific: formatScientificEmail,
+  partnership: formatPartnershipEmail,
+};
+
+const subjectLabels = {
+  investor: "Investor Enquiry",
+  scientific: "Scientific Collaboration Enquiry",
+  partnership: "Partnership Enquiry",
+};
+
 export async function POST(request: Request) {
   const ip = getClientIP(request);
 
-  // Rate limit: 3 submissions per IP per hour
   if (checkRateLimit(`contact:${ip}`, 3, 3600)) {
     return NextResponse.json(
       { error: "Too many submissions. Please try again later." },
@@ -88,17 +105,22 @@ export async function POST(request: Request) {
     );
   }
 
-  // In production: send email via SendGrid
-  // For now: log the submission
-  console.log(`[Contact Form] ${enquiryType} enquiry from ${result.data.name}`);
+  const data = result.data as Record<string, unknown>;
+  const formatter = emailFormatters[enquiryType];
+  const label = subjectLabels[enquiryType];
 
-  // TODO: Wire up SendGrid
-  // await sendEmail({
-  //   to: enquiryType === 'investor' ? process.env.INVESTOR_EMAIL_TO : process.env.CONTACT_EMAIL_TO,
-  //   from: 'noreply@metabrainlabs.com',
-  //   subject: `[MetaBrain Labs] New ${enquiryType} enquiry from ${result.data.name}`,
-  //   html: formatEnquiryEmail(result.data),
-  // });
+  try {
+    await sendEmail({
+      subject: `[MetaBrain Lab] New ${label} from ${data.name}`,
+      html: formatter(data),
+    });
+  } catch (err) {
+    console.error("[Contact] Email send failed:", err);
+    return NextResponse.json(
+      { error: "Failed to send your enquiry. Please try again or email us directly." },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({ success: true });
 }

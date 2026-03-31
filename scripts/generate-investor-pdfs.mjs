@@ -66,7 +66,7 @@ class PDFBuilder {
 
     // Header bar
     this.page.drawRectangle({ x: 0, y: H - HEADER_H, width: W, height: HEADER_H, color: NAVY });
-    this.page.drawText("METABRAIN LABS", {
+    this.page.drawText("METABRAIN LAB", {
       x: MARGIN, y: H - 33, font: this.fonts.bold, size: 9, color: TEAL,
     });
     const headerRight = `${this.docTitle.toUpperCase()}  |  ${VERSION}`;
@@ -77,7 +77,7 @@ class PDFBuilder {
 
     // Footer bar
     this.page.drawRectangle({ x: 0, y: 0, width: W, height: 40, color: NAVY });
-    this.page.drawText(`CONFIDENTIAL  |  MetaBrain Labs Ltd  |  ${DATE}`, {
+    this.page.drawText(`CONFIDENTIAL  |  MetaBrain Lab Ltd  |  ${DATE}`, {
       x: MARGIN, y: 14, font: this.fonts.regular, size: 7, color: GREY,
     });
 
@@ -217,7 +217,7 @@ function drawCoverPage(doc, fonts, { title, subtitle, docType }) {
   cover.drawRectangle({ x: MARGIN, y: H - 108, width: 30, height: 1, color: rgb(45/255, 212/255, 191/255, 0.4) });
 
   // Company name
-  cover.drawText("METABRAIN LABS", {
+  cover.drawText("METABRAIN LAB", {
     x: MARGIN, y: H - 145, font: fonts.bold, size: 12, color: TEAL,
   });
 
@@ -267,10 +267,10 @@ function drawCoverPage(doc, fonts, { title, subtitle, docType }) {
 
   cover.drawRectangle({ x: MARGIN, y: 42, width: CONTENT_W, height: 0.5, color: rgb(0.3, 0.35, 0.45) });
 
-  cover.drawText("MetaBrain Labs Ltd  |  United Kingdom  |  metabrainlabs.com", {
+  cover.drawText("MetaBrain Lab Ltd  |  United Kingdom  |  metabrainlab.com", {
     x: MARGIN, y: 28, font: fonts.regular, size: 8, color: GREY,
   });
-  cover.drawText("Contact: investors@metabrainlabs.com", {
+  cover.drawText("Contact: investors@metabrainlab.com", {
     x: MARGIN, y: 16, font: fonts.regular, size: 8, color: GREY,
   });
 }
@@ -292,7 +292,7 @@ function drawFCAPage(builder) {
 
   builder.drawSubheading("Risk Warning");
   builder.drawParagraph(
-    "MetaBrain Labs Ltd is a pre-revenue, early-stage research and development company. Investment in early-stage companies carries substantial risk, including the risk of total loss of capital. Past performance is not indicative of future results. The value of investments can fall as well as rise, and investors may not recover the amount originally invested."
+    "MetaBrain Lab Ltd is a pre-revenue, early-stage research and development company. Investment in early-stage companies carries substantial risk, including the risk of total loss of capital. Past performance is not indicative of future results. The value of investments can fall as well as rise, and investors may not recover the amount originally invested."
   );
   builder.drawParagraph(
     "Prospective investors should seek independent financial, legal, and tax advice before making any investment decision. This document does not constitute an offer to sell or a solicitation of an offer to buy securities. Any such offer would only be made pursuant to a formal offering document."
@@ -307,22 +307,22 @@ function drawFCAPage(builder) {
 
   builder.drawSubheading("Related-Party Disclosure");
   builder.drawParagraph(
-    "MetaBrain Labs Ltd engages Pixelette Technologies Ltd for research and development execution services. Pixelette Technologies is a related party: both entities share common founding leadership. Mr Asif Hussain Rana serves as Founder & CEO of MetaBrain Labs and is also the founder of Pixelette Technologies. All related-party transactions are conducted at arm's-length terms and subject to independent board review. A detailed related-party transaction register is maintained and available to investors upon request."
+    "MetaBrain Lab Ltd engages Pixelette Technologies Ltd for research and development execution services. Pixelette Technologies is a related party: both entities share common founding leadership. Mr Asif Hussain Rana serves as Founder & CEO of MetaBrain Lab and is also the founder of Pixelette Technologies. All related-party transactions are conducted at arm's-length terms and subject to independent board review. A detailed related-party transaction register is maintained and available to investors upon request."
   );
   builder.drawSpacer(8);
 
   builder.drawSubheading("Intellectual Property");
   builder.drawParagraph(
-    "All intellectual property developed by Pixelette Technologies in execution of MetaBrain Labs research programmes is assigned to MetaBrain Labs Ltd under formal IP assignment agreements. MetaBrain Labs maintains full ownership of all platform technology, research outputs, and associated intellectual property."
+    "All intellectual property developed by Pixelette Technologies in execution of MetaBrain Lab research programmes is assigned to MetaBrain Lab Ltd under formal IP assignment agreements. MetaBrain Lab maintains full ownership of all platform technology, research outputs, and associated intellectual property."
   );
   builder.drawSpacer(8);
 
   builder.drawSubheading("Contact Information");
-  builder.drawParagraph("MetaBrain Labs Ltd");
+  builder.drawParagraph("MetaBrain Lab Ltd");
   builder.drawParagraph("Registered in England and Wales");
-  builder.drawParagraph("Investor enquiries: investors@metabrainlabs.com");
-  builder.drawParagraph("General enquiries: contact@metabrainlabs.com");
-  builder.drawParagraph("Website: metabrainlabs.com");
+  builder.drawParagraph("Investor enquiries: investors@metabrainlab.com");
+  builder.drawParagraph("General enquiries: contact@metabrainlab.com");
+  builder.drawParagraph("Website: metabrainlab.com");
 }
 
 // ─── Document Content: Executive Summary ───
@@ -331,17 +331,17 @@ function buildExecutiveSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("1. Company Overview");
   builder.drawParagraph(
-    "MetaBrain Labs is a UK-headquartered neuroscience and artificial intelligence company building integrated infrastructure for safe, ethical cognitive enhancement. The company is developing systems designed to measurably improve human memory, learning, focus, and decision-making through the application of established neuroscience, adaptive artificial intelligence, and privacy-preserving identity technology."
+    "MetaBrain Lab is a UK-headquartered neuroscience and artificial intelligence company building integrated infrastructure for safe, ethical cognitive enhancement. The company is developing systems designed to measurably improve human memory, learning, focus, and decision-making through the application of established neuroscience, adaptive artificial intelligence, and privacy-preserving identity technology."
   );
   builder.drawParagraph(
-    "Founded by Mr Asif Hussain Rana, MetaBrain Labs operates from two locations: corporate headquarters in London (United Kingdom) for governance, regulatory affairs, and institutional partnerships; and a research & development centre in Pakistan (Lahore/Islamabad) for core research, engineering, and prototype development. R&D execution is delivered through Pixelette Technologies, a related-party entity under common founding leadership (see Related-Party Disclosure in the Disclaimers section)."
+    "Founded by Mr Asif Hussain Rana, MetaBrain Lab operates from two locations: corporate headquarters in London (United Kingdom) for governance, regulatory affairs, and institutional partnerships; and a research & development centre in Pakistan (Lahore/Islamabad) for core research, engineering, and prototype development. R&D execution is delivered through Pixelette Technologies, a related-party entity under common founding leadership (see Related-Party Disclosure in the Disclaimers section)."
   );
   builder.drawParagraph(
-    "The company is currently in Phase I — foundational research, team assembly, and initial prototype development. MetaBrain Labs is a pre-revenue entity. All financial projections, market estimates, and technology descriptions in this document represent planned capabilities and should be understood in the context of the company's early-stage status."
+    "The company is currently in Phase I — foundational research, team assembly, and initial prototype development. MetaBrain Lab is a pre-revenue entity. All financial projections, market estimates, and technology descriptions in this document represent planned capabilities and should be understood in the context of the company's early-stage status."
   );
   builder.drawSpacer(8);
   builder.drawSubheading("Corporate Structure");
-  builder.drawBullet("Legal entity: MetaBrain Labs Ltd, registered in England and Wales");
+  builder.drawBullet("Legal entity: MetaBrain Lab Ltd, registered in England and Wales");
   builder.drawBullet("Stage: Pre-revenue, Phase I (research & development)");
   builder.drawBullet("Headquarters: London, United Kingdom");
   builder.drawBullet("R&D centre: Lahore/Islamabad, Pakistan (operated via Pixelette Technologies)");
@@ -357,7 +357,7 @@ function buildExecutiveSummary(builder) {
     "This intelligence gap has implications across every sector of the economy. Defence organisations require personnel who can process information faster and make decisions under increasing cognitive load. Educational institutions face students whose attention and retention patterns are shaped by digital environments. Healthcare systems manage growing populations with age-related cognitive decline. Enterprise organisations demand cognitive performance from knowledge workers operating in environments of accelerating complexity."
   );
   builder.drawParagraph(
-    "The global cognitive enhancement market is experiencing significant growth driven by these structural pressures. Market research estimates from Grand View Research and Allied Market Research project the neurotechnology and cognitive enhancement sector to grow substantially through the end of the decade, with estimates ranging from $10 billion to $20 billion depending on market definition and scope. MetaBrain Labs references a composite figure of $15 billion by 2030, which represents a mid-range estimate across these third-party sources."
+    "The global cognitive enhancement market is experiencing significant growth driven by these structural pressures. Market research estimates from Grand View Research and Allied Market Research project the neurotechnology and cognitive enhancement sector to grow substantially through the end of the decade, with estimates ranging from $10 billion to $20 billion depending on market definition and scope. MetaBrain Lab references a composite figure of $15 billion by 2030, which represents a mid-range estimate across these third-party sources."
   );
   builder.drawSpacer(6);
   builder.drawSubheading("Market Drivers");
@@ -377,7 +377,7 @@ function buildExecutiveSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("3. Platform Architecture");
   builder.drawParagraph(
-    "MetaBrain Labs is designing a full-stack cognitive enhancement platform comprising five integrated technology layers operating as a continuous closed-loop system. The platform is designed to measure cognitive state, process that information in real-time, deliver precisely targeted interventions, and measure the effect — continuously optimising enhancement for each individual user."
+    "MetaBrain Lab is designing a full-stack cognitive enhancement platform comprising five integrated technology layers operating as a continuous closed-loop system. The platform is designed to measure cognitive state, process that information in real-time, deliver precisely targeted interventions, and measure the effect — continuously optimising enhancement for each individual user."
   );
   builder.drawParagraph(
     "The architecture is designed so that each layer enhances the others, creating compounding improvements over time. The following describes the planned platform architecture. Development is in early stages, and specific capabilities will be validated through the Phase I research programme."
@@ -413,7 +413,7 @@ function buildExecutiveSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("4. Market Opportunity & Demand Sectors");
   builder.drawParagraph(
-    "The cognitive enhancement market spans multiple high-value sectors with structural institutional demand. MetaBrain Labs' platform architecture is designed to serve institutional clients across these sectors, with consumer applications as a longer-term secondary market. The following represents the company's assessment of addressable market sectors."
+    "The cognitive enhancement market spans multiple high-value sectors with structural institutional demand. MetaBrain Lab' platform architecture is designed to serve institutional clients across these sectors, with consumer applications as a longer-term secondary market. The following represents the company's assessment of addressable market sectors."
   );
   builder.drawSpacer(4);
 
@@ -441,7 +441,7 @@ function buildExecutiveSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("5. Governance Framework");
   builder.drawParagraph(
-    "MetaBrain Labs is committed to institutional-grade governance from inception. The company is establishing four independent oversight bodies to ensure that all research and development meets the highest standards of scientific rigour, ethical responsibility, and regulatory compliance. These governance bodies are being assembled as part of the Phase I programme; specific board members will be announced as appointments are confirmed."
+    "MetaBrain Lab is committed to institutional-grade governance from inception. The company is establishing four independent oversight bodies to ensure that all research and development meets the highest standards of scientific rigour, ethical responsibility, and regulatory compliance. These governance bodies are being assembled as part of the Phase I programme; specific board members will be announced as appointments are confirmed."
   );
   builder.drawSpacer(4);
 
@@ -480,10 +480,10 @@ function buildExecutiveSummary(builder) {
 
   builder.drawSubheading("Founder & Chief Executive Officer");
   builder.drawParagraph(
-    "Mr Asif Hussain Rana is the founder and CEO of MetaBrain Labs. With a background spanning AI systems, enterprise technology, and a research interest in neuroscience-AI convergence, he identified the structural gap between accelerating machine intelligence and static human cognition. He founded MetaBrain Labs to build the infrastructure required to close that gap — responsibly, ethically, and at scale."
+    "Mr Asif Hussain Rana is the founder and CEO of MetaBrain Lab. With a background spanning AI systems, enterprise technology, and a research interest in neuroscience-AI convergence, he identified the structural gap between accelerating machine intelligence and static human cognition. He founded MetaBrain Lab to build the infrastructure required to close that gap — responsibly, ethically, and at scale."
   );
   builder.drawParagraph(
-    "Mr Rana is also the founder of Pixelette Technologies, which provides R&D execution services to MetaBrain Labs. This related-party relationship is disclosed in full in the Disclaimers section of this document. All related-party transactions are conducted at arm's-length terms."
+    "Mr Rana is also the founder of Pixelette Technologies, which provides R&D execution services to MetaBrain Lab. This related-party relationship is disclosed in full in the Disclaimers section of this document. All related-party transactions are conducted at arm's-length terms."
   );
   builder.drawSpacer(4);
 
@@ -500,14 +500,14 @@ function buildExecutiveSummary(builder) {
 
   builder.drawSubheading("R&D Execution: Pixelette Technologies (Related Party)");
   builder.drawParagraph(
-    "During the early formation stage, core engineering and R&D execution is provided by Pixelette Technologies Ltd, a technology services company founded by Mr Asif Hussain Rana. Pixelette provides immediate engineering capacity while the dedicated MetaBrain research team is assembled. All intellectual property developed under MetaBrain Labs programmes is formally assigned to MetaBrain Labs Ltd via IP assignment agreements."
+    "During the early formation stage, core engineering and R&D execution is provided by Pixelette Technologies Ltd, a technology services company founded by Mr Asif Hussain Rana. Pixelette provides immediate engineering capacity while the dedicated MetaBrain research team is assembled. All intellectual property developed under MetaBrain Lab programmes is formally assigned to MetaBrain Lab Ltd via IP assignment agreements."
   );
 
   // Page 7: Investment Thesis
   builder.newContentPage();
   builder.drawSectionTitle("7. Investment Thesis");
   builder.drawParagraph(
-    "MetaBrain Labs is seeking Phase I investment to fund foundational research, team assembly, and initial prototype development. The company offers early-stage investors exposure to a governance-first approach in the rapidly expanding neurotechnology sector."
+    "MetaBrain Lab is seeking Phase I investment to fund foundational research, team assembly, and initial prototype development. The company offers early-stage investors exposure to a governance-first approach in the rapidly expanding neurotechnology sector."
   );
   builder.drawSpacer(4);
 
@@ -540,7 +540,7 @@ function buildExecutiveSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("8. Risk Factors");
   builder.drawParagraph(
-    "Investment in MetaBrain Labs carries substantial risk. The company is a pre-revenue, early-stage research and development entity. Prospective investors should carefully consider the following risk factors before making any investment decision."
+    "Investment in MetaBrain Lab carries substantial risk. The company is a pre-revenue, early-stage research and development entity. Prospective investors should carefully consider the following risk factors before making any investment decision."
   );
   builder.drawSpacer(4);
 
@@ -599,7 +599,7 @@ function buildPitchDeck(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("Our Solution");
   builder.drawParagraph(
-    "MetaBrain Labs is building foundational infrastructure for cognitive enhancement — a full-stack platform designed to integrate neuroscience, adaptive AI, and blockchain-secured identity in a continuous closed-loop system."
+    "MetaBrain Lab is building foundational infrastructure for cognitive enhancement — a full-stack platform designed to integrate neuroscience, adaptive AI, and blockchain-secured identity in a continuous closed-loop system."
   );
   builder.drawParagraph(
     "The platform is designed to measure cognitive state in real-time, deliver precisely timed interventions, measure the effect, and adapt. Each session is intended to improve the model. Each interaction makes the system smarter. This is not a static application — it is infrastructure that evolves."
@@ -650,7 +650,7 @@ function buildPitchDeck(builder) {
   }
   builder.drawSpacer(6);
   builder.drawParagraph(
-    "MetaBrain Labs' initial go-to-market strategy focuses on institutional clients (B2B/B2G) with the highest willingness to pay and clearest use-case validation, before expanding to direct-to-consumer channels in later phases.",
+    "MetaBrain Lab' initial go-to-market strategy focuses on institutional clients (B2B/B2G) with the highest willingness to pay and clearest use-case validation, before expanding to direct-to-consumer channels in later phases.",
     { font: builder.fonts.regular, size: 10, color: TEXT_BODY }
   );
 
@@ -658,7 +658,7 @@ function buildPitchDeck(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("Business Model");
   builder.drawParagraph(
-    "MetaBrain Labs is a pre-revenue company in Phase I (R&D). The revenue model described below represents planned commercial pathways for Phase II and beyond. Revenue generation is contingent on successful technology development and regulatory approval."
+    "MetaBrain Lab is a pre-revenue company in Phase I (R&D). The revenue model described below represents planned commercial pathways for Phase II and beyond. Revenue generation is contingent on successful technology development and regulatory approval."
   );
   builder.drawSpacer(4);
 
@@ -705,14 +705,14 @@ function buildPitchDeck(builder) {
 
   builder.drawSubheading("R&D Execution Partnership");
   builder.drawParagraph(
-    "Engineering and R&D execution is currently provided by Pixelette Technologies Ltd. Pixelette Technologies is a related party: both MetaBrain Labs and Pixelette Technologies share common founding leadership (Mr Asif Hussain Rana). All related-party transactions are conducted at arm's-length terms and subject to board oversight. Full IP assignment agreements ensure MetaBrain Labs retains ownership of all technology and research outputs."
+    "Engineering and R&D execution is currently provided by Pixelette Technologies Ltd. Pixelette Technologies is a related party: both MetaBrain Lab and Pixelette Technologies share common founding leadership (Mr Asif Hussain Rana). All related-party transactions are conducted at arm's-length terms and subject to board oversight. Full IP assignment agreements ensure MetaBrain Lab retains ownership of all technology and research outputs."
   );
 
   // Page 7: Governance & Ethics
   builder.newContentPage();
   builder.drawSectionTitle("Governance & Ethics");
   builder.drawParagraph(
-    "MetaBrain Labs is committed to institutional-grade governance from inception. The company is establishing four independent oversight bodies. These governance structures are being assembled as part of Phase I; appointments will be announced as they are confirmed."
+    "MetaBrain Lab is committed to institutional-grade governance from inception. The company is establishing four independent oversight bodies. These governance structures are being assembled as part of Phase I; appointments will be announced as they are confirmed."
   );
   builder.drawSpacer(4);
 
@@ -724,14 +724,14 @@ function buildPitchDeck(builder) {
 
   builder.drawSubheading("Neurorights Framework");
   builder.drawParagraph(
-    "MetaBrain Labs is developing a comprehensive Neurorights Framework addressing five core principles: cognitive liberty (the right to mental self-determination), mental privacy (protection from unauthorised neural data access), mental integrity (protection from harmful cognitive interference), psychological continuity (preservation of personal identity), and equitable access (commitment to preventing cognitive enhancement from deepening societal inequality)."
+    "MetaBrain Lab is developing a comprehensive Neurorights Framework addressing five core principles: cognitive liberty (the right to mental self-determination), mental privacy (protection from unauthorised neural data access), mental integrity (protection from harmful cognitive interference), psychological continuity (preservation of personal identity), and equitable access (commitment to preventing cognitive enhancement from deepening societal inequality)."
   );
 
   // Page 8: The Ask & Risk Factors
   builder.newContentPage();
   builder.drawSectionTitle("The Ask");
   builder.drawParagraph(
-    "MetaBrain Labs is raising Phase I capital to fund the foundational stage of the company's research programme. Capital will be deployed across research & development (45%), team recruitment (30%), governance & regulatory formalisation (10%), and operations & infrastructure (15%). Detailed investment terms, valuation, and milestone-linked tranching will be provided in the formal offering document."
+    "MetaBrain Lab is raising Phase I capital to fund the foundational stage of the company's research programme. Capital will be deployed across research & development (45%), team recruitment (30%), governance & regulatory formalisation (10%), and operations & infrastructure (15%). Detailed investment terms, valuation, and milestone-linked tranching will be provided in the formal offering document."
   );
   builder.drawSpacer(8);
 
@@ -752,12 +752,12 @@ function buildPitchDeck(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("Contact & Next Steps");
   builder.drawSpacer(8);
-  builder.drawParagraph("MetaBrain Labs Ltd", { font: builder.fonts.bold, size: 12, color: NAVY });
+  builder.drawParagraph("MetaBrain Lab Ltd", { font: builder.fonts.bold, size: 12, color: NAVY });
   builder.drawParagraph("Registered in England and Wales");
   builder.drawSpacer(8);
-  builder.drawKeyValue("Investor enquiries", "investors@metabrainlabs.com");
-  builder.drawKeyValue("General enquiries", "contact@metabrainlabs.com");
-  builder.drawKeyValue("Website", "metabrainlabs.com");
+  builder.drawKeyValue("Investor enquiries", "investors@metabrainlab.com");
+  builder.drawKeyValue("General enquiries", "contact@metabrainlab.com");
+  builder.drawKeyValue("Website", "metabrainlab.com");
   builder.drawSpacer(12);
   builder.drawParagraph(
     "We welcome conversations with qualified investors, institutional partners, and scientific collaborators who share our commitment to responsible cognitive enhancement."
@@ -782,7 +782,7 @@ function buildTechnologyOverview(builder) {
     "Unlike point solutions that address single cognitive domains (e.g., meditation for stress, flashcards for memory), MetaBrain's architecture is designed so that each layer enhances the others, creating compounding improvements over time. The signal acquisition layer feeds the processing pipeline, which informs the cognitive engine, which drives the acceleration layer, which generates new data for the acquisition layer."
   );
   builder.drawParagraph(
-    "Important context: the platform architecture described in this document represents the company's design intent and research roadmap. MetaBrain Labs is in Phase I (foundational research and prototype development). The specific capabilities described are targets for validation through the Phase I research programme, not demonstrated performance characteristics."
+    "Important context: the platform architecture described in this document represents the company's design intent and research roadmap. MetaBrain Lab is in Phase I (foundational research and prototype development). The specific capabilities described are targets for validation through the Phase I research programme, not demonstrated performance characteristics."
   );
   builder.drawSpacer(6);
   builder.drawSubheading("Design Principles");
@@ -878,9 +878,9 @@ function buildTechnologyOverview(builder) {
   );
   builder.drawSpacer(4);
   builder.drawSubheading("Core Design Principles");
-  builder.drawBullet("User sovereignty: all cognitive data is owned by the user, not by MetaBrain Labs or any third party. Users grant and revoke access via cryptographic consent mechanisms.");
+  builder.drawBullet("User sovereignty: all cognitive data is owned by the user, not by MetaBrain Lab or any third party. Users grant and revoke access via cryptographic consent mechanisms.");
   builder.drawBullet("Zero-knowledge proofs: cognitive capabilities can be verified (e.g., for certification purposes) without revealing underlying data. A user can prove they achieved a cognitive performance threshold without exposing their raw neural data.");
-  builder.drawBullet("Decentralised storage: cognitive profiles are stored on decentralised infrastructure, not on MetaBrain Labs servers. The company cannot access user data without explicit cryptographic consent.");
+  builder.drawBullet("Decentralised storage: cognitive profiles are stored on decentralised infrastructure, not on MetaBrain Lab servers. The company cannot access user data without explicit cryptographic consent.");
   builder.drawBullet("Portability: users can export their cognitive profile and move it to competing platforms or services. No vendor lock-in.");
   builder.drawSpacer(4);
   builder.drawSubheading("Security Architecture");
@@ -953,10 +953,10 @@ function buildFinancialSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("1. Phase I Overview");
   builder.drawParagraph(
-    "MetaBrain Labs Ltd is a pre-revenue research and development company currently in Phase I — foundational research, team assembly, and prototype development. This financial summary outlines the company's capital requirements, planned allocation methodology, key milestones, financial governance structures, and risk factors."
+    "MetaBrain Lab Ltd is a pre-revenue research and development company currently in Phase I — foundational research, team assembly, and prototype development. This financial summary outlines the company's capital requirements, planned allocation methodology, key milestones, financial governance structures, and risk factors."
   );
   builder.drawParagraph(
-    "All financial information in this document represents planned allocation and forward-looking projections. Actual expenditure will depend on research outcomes, team recruitment timelines, and market conditions. MetaBrain Labs has no revenue and does not expect to generate revenue during Phase I. Additional funding rounds will be required to progress to Phase II and beyond."
+    "All financial information in this document represents planned allocation and forward-looking projections. Actual expenditure will depend on research outcomes, team recruitment timelines, and market conditions. MetaBrain Lab has no revenue and does not expect to generate revenue during Phase I. Additional funding rounds will be required to progress to Phase II and beyond."
   );
   builder.drawParagraph(
     "Phase I is designed to establish the scientific foundation, recruit the core research team, develop initial prototypes that validate the platform architecture, and formalise the governance framework. Successful completion of Phase I milestones is intended to de-risk the company for subsequent investment rounds."
@@ -1063,7 +1063,7 @@ function buildFinancialSummary(builder) {
 
   builder.drawSectionTitle("4. Financial Governance");
   builder.drawParagraph(
-    "MetaBrain Labs implements institutional-grade financial governance from inception to ensure investor capital is deployed responsibly, transparently, and in accordance with agreed milestones."
+    "MetaBrain Lab implements institutional-grade financial governance from inception to ensure investor capital is deployed responsibly, transparently, and in accordance with agreed milestones."
   );
   builder.drawSpacer(4);
   builder.drawSubheading("Fund Management");
@@ -1082,46 +1082,46 @@ function buildFinancialSummary(builder) {
   builder.newContentPage();
   builder.drawSectionTitle("5. Related-Party Disclosure");
   builder.drawParagraph(
-    "MetaBrain Labs Ltd engages Pixelette Technologies Ltd for research and development execution services. This section provides full disclosure of the related-party relationship, the commercial terms, and the safeguards in place to protect investor interests."
+    "MetaBrain Lab Ltd engages Pixelette Technologies Ltd for research and development execution services. This section provides full disclosure of the related-party relationship, the commercial terms, and the safeguards in place to protect investor interests."
   );
   builder.drawSpacer(4);
 
   builder.drawSubheading("Nature of Relationship");
   builder.drawParagraph(
-    "Pixelette Technologies Ltd is a technology services company founded by Mr Asif Hussain Rana, who also serves as Founder & CEO of MetaBrain Labs Ltd. Both entities share common founding leadership. This constitutes a related-party relationship under applicable accounting and corporate governance standards."
+    "Pixelette Technologies Ltd is a technology services company founded by Mr Asif Hussain Rana, who also serves as Founder & CEO of MetaBrain Lab Ltd. Both entities share common founding leadership. This constitutes a related-party relationship under applicable accounting and corporate governance standards."
   );
   builder.drawSpacer(4);
 
   builder.drawSubheading("Scope of Engagement");
   builder.drawParagraph(
-    "Pixelette Technologies provides engineering and R&D execution services to MetaBrain Labs during the early formation stage. This engagement provides MetaBrain Labs with immediate engineering capacity while the dedicated research team is being recruited. The scope includes software engineering, infrastructure development, and technical project management."
+    "Pixelette Technologies provides engineering and R&D execution services to MetaBrain Lab during the early formation stage. This engagement provides MetaBrain Lab with immediate engineering capacity while the dedicated research team is being recruited. The scope includes software engineering, infrastructure development, and technical project management."
   );
   builder.drawSpacer(4);
 
   builder.drawSubheading("Commercial Terms & Safeguards");
   builder.drawBullet("All transactions conducted at arm's-length terms benchmarked against market rates for equivalent services");
   builder.drawBullet("Independent board review of all related-party transactions exceeding a materiality threshold");
-  builder.drawBullet("Formal IP assignment agreements: all intellectual property developed under MetaBrain Labs programmes is assigned to MetaBrain Labs Ltd");
+  builder.drawBullet("Formal IP assignment agreements: all intellectual property developed under MetaBrain Lab programmes is assigned to MetaBrain Lab Ltd");
   builder.drawBullet("Detailed related-party transaction register maintained and available to investors upon request");
   builder.drawBullet("Annual independent audit of related-party transactions and transfer pricing");
   builder.drawSpacer(4);
 
   builder.drawSubheading("Transition Plan");
   builder.drawParagraph(
-    "As MetaBrain Labs recruits its dedicated research and engineering team during Phase I, the reliance on Pixelette Technologies for core R&D execution will progressively reduce. The target is for the majority of core research and platform development to be performed by MetaBrain Labs' own team by the end of Phase I, with Pixelette Technologies transitioning to a supplementary engineering support role."
+    "As MetaBrain Lab recruits its dedicated research and engineering team during Phase I, the reliance on Pixelette Technologies for core R&D execution will progressively reduce. The target is for the majority of core research and platform development to be performed by MetaBrain Lab' own team by the end of Phase I, with Pixelette Technologies transitioning to a supplementary engineering support role."
   );
 
   // Page 6: Risk Factors
   builder.newContentPage();
   builder.drawSectionTitle("6. Risk Factors");
   builder.drawParagraph(
-    "Investment in MetaBrain Labs carries substantial risk. The following risk factors should be carefully considered by prospective investors. This list is not exhaustive; additional risks may exist that are not currently known or that are currently deemed immaterial."
+    "Investment in MetaBrain Lab carries substantial risk. The following risk factors should be carefully considered by prospective investors. This list is not exhaustive; additional risks may exist that are not currently known or that are currently deemed immaterial."
   );
   builder.drawSpacer(4);
 
   builder.drawSubheading("Capital & Liquidity Risk");
   builder.drawParagraph(
-    "MetaBrain Labs has no revenue and no near-term revenue expectations. The company will require additional funding rounds to progress beyond Phase I. There is no guarantee that additional funding will be available on acceptable terms, or at all. Investors should be prepared for the possibility of total loss of invested capital. There is no established market for the company's shares, and investors may be unable to liquidate their investment."
+    "MetaBrain Lab has no revenue and no near-term revenue expectations. The company will require additional funding rounds to progress beyond Phase I. There is no guarantee that additional funding will be available on acceptable terms, or at all. Investors should be prepared for the possibility of total loss of invested capital. There is no established market for the company's shares, and investors may be unable to liquidate their investment."
   );
 
   builder.drawSubheading("Scientific & Technical Risk");

@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/features/scroll-reveal";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "MetaBrain Labs Terms of Use. Conditions governing your use of our website and services.",
+    "MetaBrain Lab Terms of Use. Conditions governing your use of our website and services.",
 };
 
 const lastUpdated = "20 February 2026";
@@ -14,7 +14,7 @@ const lastUpdated = "20 February 2026";
 const sections = [
   {
     title: "1. Introduction",
-    content: `These Terms of Use ("Terms") govern your access to and use of the MetaBrain Labs website at metabrainlabs.com ("the Site"), operated by MetaBrain Labs Ltd ("MetaBrain Labs", "we", "us", or "our"), a company registered in the United Kingdom. By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, you should not use the Site.`,
+    content: `These Terms of Use ("Terms") govern your access to and use of the MetaBrain Lab website at metabrainlab.com ("the Site"), operated by MetaBrain Lab Ltd ("MetaBrain Lab", "we", "us", or "our"), a company registered in the United Kingdom. By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, you should not use the Site.`,
   },
   {
     title: "2. Use of the Site",
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     title: "3. Intellectual Property",
-    content: `All content on the Site — including text, graphics, logos, images, software, and design — is the property of MetaBrain Labs Ltd or its licensors and is protected by UK and international copyright, trademark, and intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on the Site without our prior written permission.`,
+    content: `All content on the Site — including text, graphics, logos, images, software, and design — is the property of MetaBrain Lab Ltd or its licensors and is protected by UK and international copyright, trademark, and intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on the Site without our prior written permission.`,
   },
   {
     title: "4. Investor Portal Access",
@@ -37,11 +37,11 @@ const sections = [
 • Not share, distribute, or disclose any investor materials to third parties without prior written consent.
 • Comply with any additional terms, including non-disclosure agreements, presented at the time of access.
 
-MetaBrain Labs reserves the right to revoke access at any time without notice.`,
+MetaBrain Lab reserves the right to revoke access at any time without notice.`,
   },
   {
     title: "5. Disclaimer",
-    content: `The information on the Site is provided for general informational purposes only. MetaBrain Labs is a pre-revenue research and development company. Nothing on the Site constitutes:
+    content: `The information on the Site is provided for general informational purposes only. MetaBrain Lab is a pre-revenue research and development company. Nothing on the Site constitutes:
 
 • Medical advice or a recommendation for any treatment.
 • A guaranteed investment return or financial advice.
@@ -51,7 +51,7 @@ We make reasonable efforts to ensure the accuracy of information on the Site but
   },
   {
     title: "6. Limitation of Liability",
-    content: `To the fullest extent permitted by law, MetaBrain Labs shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Site. Our total liability to you for any claim arising from or related to the Site shall not exceed the amount you paid to access the Site (if any). Nothing in these Terms excludes or limits liability for death, personal injury caused by negligence, fraud, or any other liability that cannot be excluded by law.`,
+    content: `To the fullest extent permitted by law, MetaBrain Lab shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Site. Our total liability to you for any claim arising from or related to the Site shall not exceed the amount you paid to access the Site (if any). Nothing in these Terms excludes or limits liability for death, personal injury caused by negligence, fraud, or any other liability that cannot be excluded by law.`,
   },
   {
     title: "7. Third-Party Links",
@@ -69,8 +69,8 @@ We make reasonable efforts to ensure the accuracy of information on the Site but
     title: "10. Contact",
     content: `For any questions about these Terms of Use, contact us at:
 
-MetaBrain Labs Ltd
-Email: contact@metabrainlabs.com
+MetaBrain Lab Ltd
+Email: contact@metabrainlab.com
 United Kingdom`,
   },
 ];

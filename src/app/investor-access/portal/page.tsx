@@ -62,7 +62,7 @@ export default function InvestorPortalPage() {
       const fileCheck = await fetch(data.url, { method: "HEAD" });
       if (!fileCheck.ok) {
         setDownloadError(
-          "This document has not been uploaded yet. Please contact investors@metabrainlabs.com for access."
+          "This document has not been uploaded yet. Please contact investors@metabrainlab.com for access."
         );
         return;
       }
@@ -104,7 +104,7 @@ export default function InvestorPortalPage() {
               <strong className="text-pure-light">Confidential.</strong> The
               materials in this portal are confidential and intended solely for
               the named recipient. Do not distribute, copy, or share without
-              written authorisation from MetaBrain Labs.
+              written authorisation from MetaBrain Lab.
             </p>
           </div>
 
@@ -179,10 +179,10 @@ export default function InvestorPortalPage() {
                   </div>
                 </div>
                 <a
-                  href="mailto:investors@metabrainlabs.com"
+                  href="mailto:investors@metabrainlab.com"
                   className="mt-4 inline-block text-sm text-cognitive-teal hover:text-accent-hover transition-colors"
                 >
-                  Contact investors@metabrainlabs.com
+                  Contact investors@metabrainlab.com
                 </a>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function InvestorPortalPage() {
               please request a meeting.
             </p>
             <a
-              href="mailto:investors@metabrainlabs.com?subject=Meeting%20Request"
+              href="mailto:investors@metabrainlab.com?subject=Meeting%20Request"
               className="inline-flex items-center gap-2 rounded-lg bg-cognitive-teal px-6 py-3 text-sm font-medium text-sovereign-navy transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cognitive-teal/25"
             >
               Request Meeting
@@ -215,7 +215,7 @@ export default function InvestorPortalPage() {
               within article 19(5) of the Financial Services and Markets Act
               2000 (Financial Promotion) Order 2005, or high net worth
               companies and unincorporated associations falling within article
-              49(2)(a) to (d) of the Order. MetaBrain Labs Ltd is a
+              49(2)(a) to (d) of the Order. MetaBrain Lab Ltd is a
               pre-revenue, early-stage company. Investment carries substantial
               risk, including the risk of total loss of capital. Prospective
               investors should seek independent financial, legal, and tax

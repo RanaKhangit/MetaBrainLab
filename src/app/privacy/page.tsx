@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/features/scroll-reveal";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "MetaBrain Labs Privacy Policy. How we collect, use, and protect your personal data.",
+    "MetaBrain Lab Privacy Policy. How we collect, use, and protect your personal data.",
 };
 
 const lastUpdated = "20 February 2026";
@@ -14,7 +14,7 @@ const lastUpdated = "20 February 2026";
 const sections = [
   {
     title: "1. Who We Are",
-    content: `MetaBrain Labs Ltd ("MetaBrain Labs", "we", "us", or "our") is a UK-headquartered neuroscience and AI company. We are committed to protecting and respecting your privacy in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. For data protection enquiries, contact us at contact@metabrainlabs.com.`,
+    content: `MetaBrain Lab Ltd ("MetaBrain Lab", "we", "us", or "our") is a UK-headquartered neuroscience and AI company. We are committed to protecting and respecting your privacy in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. For data protection enquiries, contact us at contact@metabrainlab.com.`,
   },
   {
     title: "2. Data We Collect",
@@ -60,7 +60,7 @@ We do not sell, rent, or share your personal data with third parties for marketi
 • Right to object: object to processing based on legitimate interests.
 • Right to withdraw consent: where processing is based on consent, you may withdraw it at any time.
 
-To exercise any of these rights, contact us at contact@metabrainlabs.com. We will respond within 30 days.`,
+To exercise any of these rights, contact us at contact@metabrainlab.com. We will respond within 30 days.`,
   },
   {
     title: "7. Third-Party Services",
@@ -78,8 +78,8 @@ To exercise any of these rights, contact us at contact@metabrainlabs.com. We wil
     title: "10. Contact",
     content: `For any questions about this Privacy Policy or your personal data, contact us at:
 
-MetaBrain Labs Ltd
-Email: contact@metabrainlabs.com
+MetaBrain Lab Ltd
+Email: contact@metabrainlab.com
 United Kingdom`,
   },
 ];

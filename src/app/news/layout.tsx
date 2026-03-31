@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "News & Updates",
   description:
-    "Latest news, announcements, and developments from MetaBrain Labs.",
+    "Latest news, announcements, and developments from MetaBrain Lab.",
 };
 
 export default function NewsLayout({ children }: { children: React.ReactNode }) {

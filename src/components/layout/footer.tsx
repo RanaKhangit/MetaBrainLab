@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <span className="font-serif text-xl text-pure-light">
-              MetaBrain Labs
+              MetaBrain Lab
             </span>
             <p className="mt-3 text-sm text-soft-grey leading-relaxed">
               Engineering the Future of Human Intelligence
@@ -51,7 +51,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} MetaBrain Labs. All rights reserved.
+            &copy; {new Date().getFullYear()} MetaBrain Lab. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-xs text-text-muted hover:text-soft-grey transition-colors">

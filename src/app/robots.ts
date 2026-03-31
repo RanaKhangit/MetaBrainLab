@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/investor-access/portal", "/admin", "/api"],
       },
     ],
-    sitemap: "https://metabrainlabs.com/sitemap.xml",
+    sitemap: "https://metabrainlab.com/sitemap.xml",
   };
 }

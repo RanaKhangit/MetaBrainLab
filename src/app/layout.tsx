@@ -26,18 +26,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://metabrainlabs.com"),
+  metadataBase: new URL("https://metabrainlab.com"),
   title: {
-    default: "MetaBrain Labs \u2014 Engineering the Future of Human Intelligence",
-    template: "%s | MetaBrain Labs",
+    default: "MetaBrain Lab \u2014 Engineering the Future of Human Intelligence",
+    template: "%s | MetaBrain Lab",
   },
   description:
-    "MetaBrain Labs is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
+    "MetaBrain Lab is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
   alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     locale: "en_GB",
-    siteName: "MetaBrain Labs",
+    siteName: "MetaBrain Lab",
     images: [{ url: "/logos/og-image.svg", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },

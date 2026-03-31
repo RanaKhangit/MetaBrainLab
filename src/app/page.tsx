@@ -9,9 +9,9 @@ import { HeroAnimation } from "@/components/features/hero-animation";
 import { MouseGlow } from "@/components/features/mouse-glow";
 
 export const metadata: Metadata = {
-  title: "MetaBrain Labs — Engineering the Future of Human Intelligence",
+  title: "MetaBrain Lab — Engineering the Future of Human Intelligence",
   description:
-    "MetaBrain Labs is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
+    "MetaBrain Lab is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
 };
 
 const pillars = [
@@ -42,11 +42,11 @@ export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "MetaBrain Labs",
-    url: "https://metabrainlabs.com",
-    logo: "https://metabrainlabs.com/logos/og-image.svg",
+    name: "MetaBrain Lab",
+    url: "https://metabrainlab.com",
+    logo: "https://metabrainlab.com/logos/og-image.svg",
     description:
-      "MetaBrain Labs is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
+      "MetaBrain Lab is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
     founder: {
       "@type": "Person",
       name: "Mr Asif Hussain Rana",
@@ -54,7 +54,7 @@ export default function HomePage() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      email: "contact@metabrainlabs.com",
+      email: "contact@metabrainlab.com",
       contactType: "general",
     },
     address: {
@@ -100,12 +100,6 @@ export default function HomePage() {
               Investor Access
             </Link>
           </div>
-
-          <p className="mt-10 text-[13px] font-medium text-soft-grey/70">
-            Founder &amp; CEO: Mr Asif Hussain Rana &nbsp;|&nbsp; Phase I —
-            Cognitive Performance Research Programme &nbsp;|&nbsp; UK
-            Headquarters &nbsp;|&nbsp; Pakistan R&amp;D Hub
-          </p>
         </Container>
       </section>
 
@@ -125,7 +119,7 @@ export default function HomePage() {
               while human biological cognition remains static.
             </p>
             <p className="body-large">
-              MetaBrain Labs exists to close this gap.
+              MetaBrain Lab exists to close this gap.
             </p>
             <p className="body-large">
               Four forces are converging: AI capability explosion, neuroscience

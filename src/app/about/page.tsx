@@ -7,9 +7,9 @@ import { ScrollReveal } from "@/components/features/scroll-reveal";
 import { PageCTA } from "@/components/shared/page-cta";
 
 export const metadata: Metadata = {
-  title: "About MetaBrain Labs — Our Mission and Leadership",
+  title: "About MetaBrain Lab — Our Mission and Leadership",
   description:
-    "MetaBrain Labs is a UK-headquartered neuroscience and AI company building integrated cognitive enhancement infrastructure.",
+    "MetaBrain Lab is a UK-headquartered neuroscience and AI company building integrated cognitive enhancement infrastructure.",
 };
 
 const governanceBoards = [
@@ -47,8 +47,8 @@ export default function AboutPage() {
     jobTitle: "Founder & Chief Executive Officer",
     worksFor: {
       "@type": "Organization",
-      name: "MetaBrain Labs",
-      url: "https://metabrainlabs.com",
+      name: "MetaBrain Lab",
+      url: "https://metabrainlab.com",
     },
     url: "https://pixelettetech.com",
   };
@@ -60,7 +60,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PageHeader
-        title="About MetaBrain Labs"
+        title="About MetaBrain Lab"
         subtitle="Building the foundational layer for how humans and AI safely co-evolve."
         authorityTag="INSTITUTIONAL PROFILE — LEADERSHIP &amp; GOVERNANCE"
       />
@@ -72,7 +72,7 @@ export default function AboutPage() {
 
           <div className="mx-auto max-w-3xl space-y-6">
             <p className="body-large">
-              MetaBrain Labs is a UK-headquartered neuroscience and AI company
+              MetaBrain Lab is a UK-headquartered neuroscience and AI company
               building integrated infrastructure for cognitive enhancement.
             </p>
             <p className="body-large">
@@ -131,12 +131,12 @@ export default function AboutPage() {
 
           <div className="rounded-xl border border-white/5 bg-neural-slate p-8 md:p-12">
             <div className="flex flex-col gap-8 md:flex-row md:gap-12">
-              {/* Placeholder image area */}
               <div className="flex-shrink-0">
-                <div className="flex h-48 w-48 items-center justify-center rounded-lg bg-surface">
-                  <User
-                    className="h-20 w-20 text-text-muted"
-                    strokeWidth={1}
+                <div className="h-56 w-44 overflow-hidden rounded-lg bg-surface">
+                  <img
+                    src="/ceo-asif-rana.png"
+                    alt="Mr Asif Hussain Rana — Founder & CEO of MetaBrain Lab"
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 {/* Social Links */}
                 <div className="mb-6 flex items-center gap-3">
                   <a
-                    href="https://www.linkedin.com/in/asifrana"
+                    href="https://www.linkedin.com/in/rana-khan-asif/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-soft-grey transition-all duration-200 hover:border-cognitive-teal/40 hover:bg-cognitive-teal/10 hover:text-cognitive-teal"
@@ -160,7 +160,7 @@ export default function AboutPage() {
                     <Linkedin className="h-4 w-4" />
                   </a>
                   <a
-                    href="https://twitter.com/asifrana"
+                    href="https://x.com/AsifAshiqRana1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-soft-grey transition-all duration-200 hover:border-cognitive-teal/40 hover:bg-cognitive-teal/10 hover:text-cognitive-teal"
@@ -169,7 +169,7 @@ export default function AboutPage() {
                     <Twitter className="h-4 w-4" />
                   </a>
                   <a
-                    href="https://pixelettetech.com"
+                    href="https://pixelettetech.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-soft-grey transition-all duration-200 hover:border-cognitive-teal/40 hover:bg-cognitive-teal/10 hover:text-cognitive-teal"
@@ -180,11 +180,11 @@ export default function AboutPage() {
                 </div>
 
                 <p className="body-default mb-6">
-                  Asif Hussain Rana is the founder and CEO of MetaBrain Labs. With a
+                  Asif Hussain Rana is the founder and CEO of MetaBrain Lab. With a
                   background spanning AI systems, enterprise technology, and
                   cognitive science research, he identified the critical gap
                   between accelerating machine intelligence and static human
-                  cognition. He founded MetaBrain Labs to build the
+                  cognition. He founded MetaBrain Lab to build the
                   infrastructure required to close that gap — responsibly,
                   ethically, and at scale.
                 </p>
@@ -213,7 +213,7 @@ export default function AboutPage() {
 
                 <blockquote className="border-l-2 border-cognitive-teal/40 pl-6">
                   <p className="body-default italic text-soft-grey">
-                    &ldquo;MetaBrain Labs is not a side project. It is the
+                    &ldquo;MetaBrain Lab is not a side project. It is the
                     defining mission of my career. We are not building a company
                     — we are building the infrastructure for humanity&#39;s
                     cognitive future.&rdquo;
@@ -231,7 +231,7 @@ export default function AboutPage() {
           <SectionHeading title="Governance" />
 
           <p className="body-large mx-auto mb-12 max-w-3xl">
-            MetaBrain Labs is assembling institutional-grade governance to ensure
+            MetaBrain Lab is assembling institutional-grade governance to ensure
             our work meets the highest standards of scientific rigour and ethical
             responsibility. These oversight bodies are being established as part
             of the Phase I programme; specific board members will be announced as
@@ -311,17 +311,17 @@ export default function AboutPage() {
 
           <div className="mx-auto max-w-3xl space-y-6">
             <p className="body-default">
-              MetaBrain Labs Ltd engages Pixelette Technologies Ltd for research
+              MetaBrain Lab Ltd engages Pixelette Technologies Ltd for research
               and development execution services. Pixelette Technologies is a
               related party: both entities share common founding leadership. Mr
-              Asif Hussain Rana serves as Founder &amp; CEO of MetaBrain Labs and is
+              Asif Hussain Rana serves as Founder &amp; CEO of MetaBrain Lab and is
               also the founder of Pixelette Technologies.
             </p>
             <p className="body-default">
               All related-party transactions are conducted at arm&apos;s-length
               terms and subject to independent board review. All intellectual
-              property developed under MetaBrain Labs research programmes is
-              formally assigned to MetaBrain Labs Ltd. A detailed related-party
+              property developed under MetaBrain Lab research programmes is
+              formally assigned to MetaBrain Lab Ltd. A detailed related-party
               transaction register is maintained and available to investors upon
               request.
             </p>

@@ -34,7 +34,7 @@ export default function InvestorAccessPage() {
       }
     } catch {
       setError(
-        "Service temporarily unavailable. Please contact investors@metabrainlabs.com"
+        "Service temporarily unavailable. Please contact investors@metabrainlab.com"
       );
     } finally {
       setLoading(false);
@@ -42,7 +42,7 @@ export default function InvestorAccessPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-sovereign-navy px-4 pt-[72px]">
+    <div className="flex min-h-screen items-center justify-center bg-sovereign-navy px-4 py-32 pt-[120px]">
       <div className="relative w-full max-w-md">
         {/* Subtle radial glow behind the card */}
         <div
@@ -66,7 +66,7 @@ export default function InvestorAccessPage() {
 
           <p className="body-default mb-8 text-center">
             This portal provides access to detailed investment materials for
-            MetaBrain Labs.
+            MetaBrain Lab.
           </p>
           <p className="body-default mb-8 text-center">
             Access is restricted to qualified investors who have received an
@@ -121,10 +121,10 @@ export default function InvestorAccessPage() {
           If you are an investor and have not received a code, please contact us
           at{" "}
           <a
-            href="mailto:investors@metabrainlabs.com"
+            href="mailto:investors@metabrainlab.com"
             className="text-cognitive-teal transition hover:text-accent-hover"
           >
-            investors@metabrainlabs.com
+            investors@metabrainlab.com
           </a>
         </p>
 

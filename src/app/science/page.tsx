@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The Science — MetaBrain Labs Research Foundation",
+  title: "The Science — MetaBrain Lab Research Foundation",
   description:
-    "MetaBrain Labs' approach is grounded in established neuroscience. Learn about our research foundation and scientific methodology.",
+    "MetaBrain Lab' approach is grounded in established neuroscience. Learn about our research foundation and scientific methodology.",
 };
 
 const brainSystems = [

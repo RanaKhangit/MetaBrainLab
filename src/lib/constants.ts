@@ -1,19 +1,19 @@
 export const siteConfig = {
-  name: "MetaBrain Labs",
+  name: "MetaBrain Lab",
   tagline: "Engineering the Future of Human Intelligence",
   description:
-    "MetaBrain Labs is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
-  url: "https://metabrainlabs.com",
+    "MetaBrain Lab is building integrated cognitive enhancement infrastructure. Learn faster. Remember better. Focus deeper. Decide clearer.",
+  url: "https://metabrainlab.com",
   ogImage: "/logos/og-image.svg",
   founder: {
     name: "Mr Asif Hussain Rana",
     title: "Founder & Chief Executive Officer",
   },
   emails: {
-    general: "contact@metabrainlabs.com",
-    investors: "investors@metabrainlabs.com",
-    careers: "careers@metabrainlabs.com",
-    media: "media@metabrainlabs.com",
+    general: "contact@metabrainlab.com",
+    investors: "investors@metabrainlab.com",
+    careers: "careers@metabrainlab.com",
+    media: "media@metabrainlab.com",
   },
 };
 
