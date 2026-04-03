@@ -46,23 +46,32 @@ function timestamp(): string {
   });
 }
 
-// Logo hosted publicly — works in Gmail, Outlook, Apple Mail
-// Update this URL once the site is deployed with a PNG version
-const LOGO_URL = process.env.EMAIL_LOGO_URL || "";
+// Logo: GitHub raw URL for PNG (works in Gmail, Outlook, Apple Mail)
+const LOGO_URL = process.env.EMAIL_LOGO_URL || "https://raw.githubusercontent.com/AmmarHanif/MetaLabBrain/master/public/logos/logo-email.png";
 
 function logoBlock(): string {
   if (LOGO_URL) {
-    return `<img src="${LOGO_URL}" alt="MetaBrain Lab" width="180" height="40" style="display:block;margin:0 auto 8px" />`;
+    return `<img src="${LOGO_URL}" alt="MetaBrain Lab" width="280" height="113" style="display:block;margin:0 auto" />`;
   }
-  // Text fallback with brand styling (works everywhere)
+  // HTML-rendered brand mark — works in Gmail, Outlook, Apple Mail
   return `
-    <div style="text-align:center;margin-bottom:8px">
-      <div style="display:inline-block;width:48px;height:48px;border:2px solid #2DD4BF;border-radius:50%;line-height:48px;text-align:center;margin-bottom:12px">
-        <span style="font-size:22px;font-weight:700;color:#2DD4BF;font-family:Georgia,serif">m</span>
-      </div>
-      <div style="font-size:18px;font-weight:700;color:#F8FAFC;letter-spacing:4px;text-transform:uppercase">METABRAIN</div>
-      <div style="font-size:11px;font-weight:600;color:#94A3B8;letter-spacing:6px;text-transform:uppercase;margin-top:2px">LABS</div>
-    </div>`;
+    <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 8px">
+      <tr>
+        <td align="center" valign="middle" style="padding-right:14px">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width:52px;height:52px;border:2px solid #2DD4BF;border-radius:50%;text-align:center;vertical-align:middle">
+                <span style="font-size:26px;font-weight:700;color:#2DD4BF;font-family:Georgia,'Times New Roman',serif;line-height:52px">m</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td align="left" valign="middle">
+          <div style="font-size:20px;font-weight:800;color:#F8FAFC;letter-spacing:5px;text-transform:uppercase;line-height:1.1;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">METABRAIN</div>
+          <div style="font-size:12px;font-weight:700;color:#64748B;letter-spacing:8px;text-transform:uppercase;line-height:1;margin-top:2px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">LABS</div>
+        </td>
+      </tr>
+    </table>`;
 }
 
 function row(label: string, value: string | undefined): string {
@@ -95,13 +104,12 @@ function emailWrapper(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="margin:0;padding:0;background:#080C18;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">
+<body style="margin:0;padding:0;background:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">
   <div style="max-width:620px;margin:0 auto;padding:40px 16px">
 
     <!-- Header -->
-    <div style="text-align:center;padding:32px 0">
+    <div style="text-align:center;padding:32px 0;background:#000000">
       ${logoBlock()}
-      <p style="margin:12px 0 0;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#64748B">Engineering the Future of Human Intelligence</p>
     </div>
 
     <!-- Main Card -->
