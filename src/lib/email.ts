@@ -1,6 +1,12 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let _resend: Resend | null = null;
+function getResend(): Resend {
+  if (!_resend) {
+    _resend = new Resend(process.env.RESEND_API_KEY);
+  }
+  return _resend;
+}
 
 const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev";
 const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "contact@metabrainlab.com";
@@ -15,7 +21,7 @@ interface SendEmailOptions {
 export async function sendEmail({ to, subject, html }: SendEmailOptions) {
   const recipient = to || NOTIFY_EMAIL;
 
-  const { error } = await resend.emails.send({
+  const { error } = await getResend().emails.send({
     from: `MetaBrain Lab <${FROM_EMAIL}>`,
     to: recipient,
     subject,
